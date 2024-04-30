@@ -66,7 +66,8 @@ const Login = () => {
                             <div>
                                 <input
                                     type="email"
-                                    placeholder="Enter Email"
+                                    placeholder="admin@example.com"
+                                    value="admin@example.com"
                                     className="w-full py-3 px-6 ring-1 ring-gray-300 rounded-lg placeholder-gray-600 bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
                                     {...register("email", {
                                         required: {
@@ -88,7 +89,8 @@ const Login = () => {
                             <div className="flex flex-col items-end">
                                 <input
                                     type="password"
-                                    placeholder="Enter Password"
+                                    placeholder="admin12"
+                                    value="admin12"
                                     className="w-full py-3 px-6 ring-1 ring-gray-300 rounded-lg placeholder-gray-600 bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
                                     {...register("password", {
                                         required: {
