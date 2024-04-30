@@ -8,10 +8,11 @@ import Signup from './Components/Login/Signup';
 import CreateForm from './Components/Dashboard/CreateForm';
 import Analytics from './Components/Dashboard/Analytics';
 import UpdateForm from './Components/Dashboard/UpdateForm';
-import Table from './Components/Dashboard/Table';
+import Advanced from './Components/Dashboard/Advanced';
 import NotFound from './Components/Shared/NotFound';
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
           <Route index element={<RequireAuth><Analytics /></RequireAuth>} />
           <Route path='create-form' element={<CreateForm />} />
           <Route path='update-form' element={<UpdateForm />} />
-          <Route path='table' element={<Table />} />
+          <Route path='table' element={<Advanced />} />
           <Route path='*' element={<NotFound />}></Route>
         </Route>
       </Route>
